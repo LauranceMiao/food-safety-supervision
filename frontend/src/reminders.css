@@ -1,0 +1,3 @@
+.reminder-row{display:flex;flex-direction:column;gap:3px;padding:10px 4px;border-bottom:1px solid #ecf1ed;cursor:pointer;font-size:13px}
+.reminder-row:hover{background:#f5f9f6}
+.reminder-row small{color:#899991}

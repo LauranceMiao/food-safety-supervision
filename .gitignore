@@ -1,0 +1,38 @@
+/backend/target/
+/frontend/node_modules/
+/frontend/dist/
+/data/
+*.log
+.env
+.idea/
+.vscode/
+backend/config/local-db.properties
+backend/config/admin-credentials.properties
+backend/config/demo-accounts.properties
+/backend/data/
+
+# Local presentation drafts, previews and generated layout data
+/.presentation-build/
+
+# Python bytecode and local test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage/
+.coverage
+htmlcov/
+
+# Local environment overrides; keep distributable templates
+.env.*
+!.env.example
+!.env.*.example
+
+# Editor and operating-system temporary files
+*.tmp
+*.swp
+*.swo
+*~
+Thumbs.db
+.DS_Store

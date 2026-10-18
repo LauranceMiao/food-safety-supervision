@@ -1,0 +1,31 @@
+spring:
+  config:
+    import: optional:file:./config/local-db.properties
+  application:
+    name: campus-food-safety
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/campus_food_safety?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:}
+  flyway:
+    enabled: true
+  servlet:
+    multipart:
+      max-file-size: 8MB
+      max-request-size: 10MB
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    jdbc-type-for-null: NULL
+server:
+  port: ${PORT:8080}
+  servlet:
+    session:
+      cookie:
+        http-only: true
+        same-site: lax
+      timeout: 8h
+app:
+  upload-dir: ${UPLOAD_DIR:./data/uploads}
+  bootstrap-admin-password: ${APP_BOOTSTRAP_ADMIN_PASSWORD:}
+  school-zone: Asia/Shanghai

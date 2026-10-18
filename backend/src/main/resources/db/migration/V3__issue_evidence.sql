@@ -1,0 +1,3 @@
+ALTER TABLE issue
+    ADD COLUMN location VARCHAR(200) NOT NULL DEFAULT '' AFTER description,
+    ADD COLUMN evidence_path VARCHAR(500) DEFAULT NULL AFTER location;
