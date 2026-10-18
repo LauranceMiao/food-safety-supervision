@@ -36,3 +36,6 @@ htmlcov/
 *~
 Thumbs.db
 .DS_Store
+
+# Local presentation slides and speaking notes
+/汇报材料/
